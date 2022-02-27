@@ -1,0 +1,69 @@
+/* Universal Styles */
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main, footer {
+    position: relative;
+    top: 10rem;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Header Styles */
+
+header {
+    border-bottom: 1px solid rgb(120, 120, 120);
+}
+
+header nav > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    font-weight: bolder;
+    color: rgb(120, 120, 120);
+}
+
+@media only screen and (max-width: 800px) {
+    header .desktop .hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
