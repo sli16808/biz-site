@@ -110,6 +110,30 @@ header .button:hover {
     padding: 0.5rem;
 }
 
-.banner h2 {
+#about h2 {
     font-size: 1.5rem;
+}
+
+main > section {
+    padding: 2rem;
+}
+
+#team .outer {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+#team .outer > * {
+    width: 45%;
+    background-color: rgb(120, 120, 120);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#team img {
+    width: 100%;
+    height: auto;
 }
